@@ -5,7 +5,10 @@ export default function AboutSection () {
   return (
     <section className="">
     <div className="">
-        <Heading />
+        <Heading 
+        text="О НАС"
+        level="h2"
+        />
         <p className="about__p">
             Студия основана в 2011 году. Полностью отдаемся проектированию и
             реализации интерьеров. К нам обращаются за уютом, индивидуальными

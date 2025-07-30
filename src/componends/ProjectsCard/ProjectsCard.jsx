@@ -1,19 +1,19 @@
-import projectsImg1 from "../../assets/projectsImg1.png"
+
 import Button from "../Button/Button"
 
 
-export default function ProjectsCard () {
+export default function ProjectsCard (props) {
   return (
     <section className="">
     <ul className="">
         <li className="">
         <img
             className=""
-            src={projectsImg1}
-            alt="Изображение"
+            src={props.image}
+            alt={props.title}
             loading="lazy"
         />
-        <h3 className="">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
+        <h3 className="">{props.title} — {props.squar} м² — {props.year}</h3>
         <Button />
         </li>
     </ul>
