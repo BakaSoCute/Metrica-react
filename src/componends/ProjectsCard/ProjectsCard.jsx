@@ -3,6 +3,9 @@ import Button from "../Button/Button"
 
 
 export default function ProjectsCard (props) {
+  function handleButton () {
+    alert("2")
+  }
   return (
     <section className="">
     <ul className="">
@@ -14,7 +17,10 @@ export default function ProjectsCard (props) {
             loading="lazy"
         />
         <h3 className="">{props.title} — {props.squar} м² — {props.year}</h3>
-        <Button />
+        <Button 
+        text="Подробнее"
+        onClick={handleButton}
+        />
         </li>
     </ul>
     </section>

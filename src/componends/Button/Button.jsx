@@ -1,5 +1,8 @@
-export default function Button () {
+export default function Button ({text , isDisabled, onClick}) {
+
     return (
-        <button>Посмотреть услуги</button>
+        <button onClick={onClick} disabled={isDisabled}>
+            {text}
+        </button>
     )
 }
